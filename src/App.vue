@@ -1,37 +1,25 @@
 <template>
   <div id="app">
     <div class="content">
-      <div v-if="tabs[0].isActive">
-        <Home></Home>
-      </div>
-      <div v-if="tabs[1].isActive">1</div>
-      <div v-if="tabs[2].isActive">2</div>
-      <div v-if="tabs[3].isActive">3</div>
+      <router-view></router-view>
     </div>
     <div class="tabbar-wrapper">
-      <div
-        :class="['tabbar-item', item.isActive ? 'active' : '']"
-        v-for="(item, index) in tabs"
+      <router-link
+        :to="item.url"
+        :class="['tabbar-item']"
+        v-for="item in tabs"
         :key="item.id"
-        @click="handleIsActive(index)"
       >
         <i :class="['iconfont', item.iconClass]"></i>
         <span class="item-title">{{ item.value }}</span>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
-// import Tabbar from "./components/Tabber";
-import Home from "./components/Home";
-
 export default {
   name: "App",
-  components: {
-    // Tabbar,
-    Home,
-  },
   data() {
     return {
       tabs: [
@@ -39,45 +27,40 @@ export default {
           id: 0,
           value: "首页",
           iconClass: "icon-shouyeshouye",
+          url: "/home",
           isActive: true,
         },
         {
           id: 1,
           value: "订单",
           iconClass: "icon-dingdan",
+          url: "/order",
           isActive: false,
         },
         {
           id: 2,
           value: "客服",
           iconClass: "icon-kefu",
+          url: "/customer",
           isActive: false,
         },
         {
           id: 3,
           value: "我的",
           iconClass: "icon-wode",
+          url: "/mine",
           isActive: false,
         },
       ],
     };
   },
-  methods: {
-    handleIsActive(index) {
-      const { tabs } = this;
-      tabs.forEach((ele) => {
-        ele.isActive = false;
-        if (ele.id === index) {
-          ele.isActive = true;
-        }
-      });
-      this.tabs = tabs;
-    },
-  },
 };
 </script>
 
 <style lang="less">
+.router-link-active {
+  color: #18c0c8;
+}
 #app {
   width: 375px;
   min-width: 375px;
@@ -96,9 +79,6 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
-.active {
-  color: #18c0c8;
-}
 .tabbar-item {
   display: flex;
   flex-direction: column;
@@ -109,8 +89,5 @@ export default {
 
   .item-title {
   }
-}
-.content {
-  // padding-bottom: 50px;
 }
 </style>
