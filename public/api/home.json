@@ -1,5 +1,6 @@
 {
-    "nav": [{
+    "nav": [
+        {
             "title": "酒店",
             "imgSrc": "http://s.qunarzz.com/homenode/images/touchheader/hotel.png"
         },
@@ -22,16 +23,20 @@
         {
             "title": "海外酒店",
             "imgSrc": "https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png"
-        }, {
+        },
+        {
             "title": "低价机票",
             "imgSrc": "https://picbed.qunarzz.com/a36d2288f19e54562338f4d8ef986288.png"
-        }, {
+        },
+        {
             "title": "汽车票船票",
             "imgSrc": "https://picbed.qunarzz.com/377db8cb2143aebf01869c9baad3d325.png"
-        }, {
+        },
+        {
             "title": "自由行",
             "imgSrc": "https://picbed.qunarzz.com/ae617a31e0bd5803d76918b817f6d942.png"
-        }, {
+        },
+        {
             "title": "攻略",
             "imgSrc": "https://picbed.qunarzz.com/1316dc82d1ce6259686d5a68880e5a9d.png"
         },
@@ -76,70 +81,112 @@
             "imgSrc": "https://picbed.qunarzz.com/25e3b9f17a21a6e0113c57a23ffccde4.png"
         }
     ],
-    "list": [{
+    "list": [
+        {
+            "id": 0,
             "title": "今日特惠",
-            "tabText": ["当季热门度假", "今日特惠度假"],
-            "content": [{
+            "tabText": [
+                {
+                    "tabId": 0,
+                    "value": "当季热门度假",
+                    "isActive": true
+                },
+                {
+                    "tabId": 1,
+                    "value": "今日特惠度假",
+                    "isActive": false
+                }
+            ],
+            "content": [
+                {
                     "id": 0,
                     "title": "含往返飞机票+7晚住宿",
                     "pic": "http://imgs.qunarzz.com/p/p56/201302/28/6baf0a3dc2f7735893835fbb.jpg_256x160_4a6c8651.jpg",
                     "price": "1232",
-                    "tip": ["青岛-九寨沟", "8天跟团游"]
+                    "tip": [
+                        "青岛-九寨沟",
+                        "8天跟团游"
+                    ]
                 },
                 {
                     "id": 1,
                     "title": "含往返飞机票+7晚住宿",
                     "pic": "http://imgs.qunarzz.com/p/p97/1512/73/97da2a9e39df59f7.jpg_256x160_acb41adf.jpg",
                     "price": "9032",
-                    "tip": ["青岛-成都", "5天跟团游"]
+                    "tip": [
+                        "青岛-成都",
+                        "5天跟团游"
+                    ]
                 },
                 {
                     "id": 2,
                     "title": "含往返飞机票+9晚住宿",
                     "pic": "http://imgs.qunarzz.com/p/p64/1809/46/ddb72937ac938a02.jpg_256x160_5f99ddba.jpg",
                     "price": "9032",
-                    "tip": ["青岛-西安", "12天跟团游"]
+                    "tip": [
+                        "青岛-西安",
+                        "12天跟团游"
+                    ]
                 },
                 {
                     "id": 3,
                     "title": "含往返飞机票+10晚住宿",
                     "pic": "http://imgs.qunarzz.com/p/p19/1809/b9/2a3d362aabcbb02.jpg_256x160_28907832.jpg",
                     "price": "9032",
-                    "tip": ["青岛-重庆", "1天跟团游"]
+                    "tip": [
+                        "青岛-重庆",
+                        "1天跟团游"
+                    ]
                 }
-
             ],
-            "today": [{
-                "id": 0,
-                "title": "青岛当地游 1 天跟团游",
-                "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/13a837b0-fb99-4439-9328-ae2cd9136d37.jpg_r_480x320x95_2efe4fb3.jpg",
-                "price": "1232",
-                "subTitle": "多套餐/青岛直达崂山"
-            }, {
-                "id": 1,
-                "title": "含往返飞机票+7晚住宿",
-                "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/28054e7a-51d6-4c03-872c-ed8109bc20b1.jpg_r_480x320x95_c0a65857.jpg",
-                "price": "9032",
-                "subTitle": "多套餐/青岛直达崂山"
-            }, {
-                "id": 2,
-                "title": "含往返飞机票+9晚住宿",
-                "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/983c8111-5e66-4676-8522-44885d409b05.jpg_r_480x320x95_77f40c97.jpg",
-                "price": "9032",
-                "subTitle": "多套餐/青岛直达崂山"
-            }, {
-                "id": 3,
-                "title": "含往返飞机票+10晚住宿",
-                "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/4c38dd33-1b54-4083-8404-782e107ad5d2.jpg_r_480x320x95_301b013b.jpg",
-                "price": "9032",
-                "subTitle": "多套餐/青岛直达崂山"
-            }]
+            "today": [
+                {
+                    "id": 0,
+                    "title": "青岛当地游 1 天跟团游",
+                    "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/13a837b0-fb99-4439-9328-ae2cd9136d37.jpg_r_480x320x95_2efe4fb3.jpg",
+                    "price": "1232",
+                    "subTitle": "多套餐/青岛直达崂山"
+                },
+                {
+                    "id": 1,
+                    "title": "含往返飞机票+7晚住宿",
+                    "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/28054e7a-51d6-4c03-872c-ed8109bc20b1.jpg_r_480x320x95_c0a65857.jpg",
+                    "price": "9032",
+                    "subTitle": "多套餐/青岛直达崂山"
+                },
+                {
+                    "id": 2,
+                    "title": "含往返飞机票+9晚住宿",
+                    "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/983c8111-5e66-4676-8522-44885d409b05.jpg_r_480x320x95_77f40c97.jpg",
+                    "price": "9032",
+                    "subTitle": "多套餐/青岛直达崂山"
+                },
+                {
+                    "id": 3,
+                    "title": "含往返飞机票+10晚住宿",
+                    "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/4c38dd33-1b54-4083-8404-782e107ad5d2.jpg_r_480x320x95_301b013b.jpg",
+                    "price": "9032",
+                    "subTitle": "多套餐/青岛直达崂山"
+                }
+            ]
         },
         {
-            "id": 4,
+            "id": 1,
             "title": "特惠门票",
-            "tabText": ["当季景点门票", "特惠门票"],
-            "content": [{
+            "tabText": [
+                {
+                    "tabId": 0,
+                    "value": "当季景点门票",
+                    "isActive": true
+                },
+                {
+                    "tabId": 1,
+                    "value": "特惠门票",
+                    "isActive": false
+                }
+            ],
+            "content": [
+                {
                     "title": "含往返飞机票+7晚住宿",
                     "pic": "http://img1.qunarzz.com/sight/p0/1610/f9/f90e75166d28d4a9a3.img.jpg_256x160_9e778df7.jpg",
                     "price": "1232"
@@ -159,34 +206,37 @@
                     "pic": "http://img1.qunarzz.com/sight/p0/1505/af/afbcf2eeacd3f0fa.water.jpg_256x160_17b5a61c.jpg",
                     "price": "19032"
                 }
-
             ],
-            "today": [{
-                "id": 0,
-                "title": "含往返飞机票+7晚住宿",
-                "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/13a837b0-fb99-4439-9328-ae2cd9136d37.jpg_r_480x320x95_2efe4fb3.jpg",
-                "price": "1232",
-                "subTitle": "多套餐/青岛直达崂山"
-            }, {
-                "id": 1,
-                "title": "含往返飞机票+7晚住宿",
-                "pic": "http://imgs.qunarzz.com/p/p97/1512/73/97da2a9e39df59f7.jpg_256x160_acb41adf.jpg",
-                "price": "9032",
-                "subTitle": "多套餐/青岛直达崂山"
-            }, {
-                "id": 2,
-                "title": "含往返飞机票+9晚住宿",
-                "pic": "http://imgs.qunarzz.com/p/p64/1809/46/ddb72937ac938a02.jpg_256x160_5f99ddba.jpg",
-                "price": "9032",
-                "subTitle": "多套餐/青岛直达崂山"
-            }, {
-                "id": 3,
-                "title": "含往返飞机票+10晚住宿",
-                "pic": "http://imgs.qunarzz.com/p/p19/1809/b9/2a3d362aabcbb02.jpg_256x160_28907832.jpg",
-                "price": "9032",
-                "subTitle": "多套餐/青岛直达崂山"
-            }]
+            "today": [
+                {
+                    "id": 0,
+                    "title": "含往返飞机票+7晚住宿",
+                    "pic": "http://imgs.qunarzz.com/vs_ceph_vs_tts/13a837b0-fb99-4439-9328-ae2cd9136d37.jpg_r_480x320x95_2efe4fb3.jpg",
+                    "price": "1232",
+                    "subTitle": "多套餐/青岛直达崂山"
+                },
+                {
+                    "id": 1,
+                    "title": "含往返飞机票+7晚住宿",
+                    "pic": "http://imgs.qunarzz.com/p/p97/1512/73/97da2a9e39df59f7.jpg_256x160_acb41adf.jpg",
+                    "price": "9032",
+                    "subTitle": "多套餐/青岛直达崂山"
+                },
+                {
+                    "id": 2,
+                    "title": "含往返飞机票+9晚住宿",
+                    "pic": "http://imgs.qunarzz.com/p/p64/1809/46/ddb72937ac938a02.jpg_256x160_5f99ddba.jpg",
+                    "price": "9032",
+                    "subTitle": "多套餐/青岛直达崂山"
+                },
+                {
+                    "id": 3,
+                    "title": "含往返飞机票+10晚住宿",
+                    "pic": "http://imgs.qunarzz.com/p/p19/1809/b9/2a3d362aabcbb02.jpg_256x160_28907832.jpg",
+                    "price": "9032",
+                    "subTitle": "多套餐/青岛直达崂山"
+                }
+            ]
         }
     ]
-
 }
