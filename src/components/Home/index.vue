@@ -37,7 +37,7 @@ export default {
 
 <style lang="less" scope>
 .top-nav-wrapper {
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

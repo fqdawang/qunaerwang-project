@@ -4,6 +4,8 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueRouter from 'vue-router'
 
+// import { get } from "./assets/request/index.js";
+
 
 import Home from './components/Home'
 import Order from './components/Order'
@@ -18,16 +20,21 @@ Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
 
+// Vue.prototype.axios = {
+//   get
+// };
+
+const routes = [
+  { path: "/home", component: Home },
+  { path: "/order", component: Order },
+  { path: "/customer", component: Customer },
+  { path: "/mine", component: Mine },
+  { path: "/", redirect: "/home" },
+]
 
 var router = new VueRouter({
-  routes: [
-    { path: "/home", component: Home },
-    { path: "/order", component: Order },
-    { path: "/customer", component: Customer },
-    { path: "/mine", component: Mine },
-    { path: "/", redirect: "/home" }, 
-  ],
-  mode: "history", 
+  routes,
+  mode: "history",
 });
 
 new Vue({

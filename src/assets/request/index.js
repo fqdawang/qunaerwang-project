@@ -1,11 +1,18 @@
-export const request = (params) => {
-    // 定义公共url
-    const baseUrl = "http://127.0.0.1:5500/public"
+// import axios from 'axios'
+export const get = (url, params) => {
+    const baseUrl = 'http://127.0.0.1:5500/public/api'
     return new Promise((resolve, reject) => {
         this.axios
-            .get("http://127.0.0.1:5500/public/api/home.json")
-            .then((response) => {
-                console.log(response.data);
-            });
+            .get(baseUrl + url, ...params)
+            .then((res) => {
+                if (res.status === 200) {
+                    resolve(res)
+                } else {
+                    reject(res)
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
     })
 }

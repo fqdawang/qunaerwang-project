@@ -28,28 +28,24 @@ export default {
           value: "首页",
           iconClass: "icon-shouyeshouye",
           url: "/home",
-          isActive: true,
         },
         {
           id: 1,
           value: "订单",
           iconClass: "icon-dingdan",
           url: "/order",
-          isActive: false,
         },
         {
           id: 2,
           value: "客服",
           iconClass: "icon-kefu",
           url: "/customer",
-          isActive: false,
         },
         {
           id: 3,
           value: "我的",
           iconClass: "icon-wode",
           url: "/mine",
-          isActive: false,
         },
       ],
     };
