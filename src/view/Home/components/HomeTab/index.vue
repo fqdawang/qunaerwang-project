@@ -18,6 +18,7 @@
 </template>
 <script>
 export default {
+  name:'HomeTab',
   props: ["tabs"],
   methods: {
     handleGetIndex(index) {

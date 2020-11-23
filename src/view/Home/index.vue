@@ -17,8 +17,9 @@
   </div>
 </template>
 <script>
-import HomeContent from "../HomeContent";
+import HomeContent from "./components/HomeContent";
 export default {
+  name:'Home',
   data() {
     return {
       navList: [],

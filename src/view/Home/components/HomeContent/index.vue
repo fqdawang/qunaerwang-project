@@ -36,7 +36,9 @@
 <script>
 import HomeTab from "../HomeTab";
 import TabCard from "../TabCard";
+
 export default {
+  name:'HomeContent',
   data() {
     return {
       contentList: {},
@@ -72,7 +74,7 @@ export default {
     },
     getList() {
       this.axios
-        .get("http://127.0.0.1:5500/public/api/home.json")
+        .get("api/home.json")
         .then((res) => {
           const { list } = res.data;
           this.contentList = list;

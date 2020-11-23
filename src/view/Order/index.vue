@@ -9,13 +9,14 @@
 </template>
 <script>
 export default {
+  name: "Order",
   created() {
-    // console.log(this.$route);
+    console.log(this.$route);
+    console.log(this.$route.meta.name);
   },
   methods: {
-    handle(e) {
+    handle() {
       this.$router.push("order/test");
-      console.log(e);
     },
   },
 };

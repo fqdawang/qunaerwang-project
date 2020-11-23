@@ -24,3 +24,8 @@
         <div>1</div>
     </div>
 </template>
+<script>
+export default {
+    name:'Test1'
+}
+</script>
