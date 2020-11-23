@@ -25,9 +25,16 @@ export default {
     };
   },
   created() {
-    this.axios.get("http://127.0.0.1:5500/public/api/home.json").then((res) => {
-      this.navList = res.data.nav;
-    });
+    this.getNavList();
+  },
+  methods: {
+    getNavList() {
+      this.axios
+        .get("api/home.json")
+        .then((res) => {
+          this.navList = res.data.nav;
+        });
+    },
   },
   components: {
     HomeContent,

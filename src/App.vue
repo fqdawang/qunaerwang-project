@@ -3,7 +3,7 @@
     <div class="content">
       <router-view></router-view>
     </div>
-    <div class="tabbar-wrapper">
+    <div class="tabbar-wrapper" v-if="$route.path === '/home' ? true : false">
       <router-link
         :to="item.url"
         :class="['tabbar-item']"
