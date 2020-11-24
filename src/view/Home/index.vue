@@ -1,16 +1,16 @@
 <template>
-  <div class="wrapper">
+  <div class="home-wrapper">
     <!-- nav-->
     <div class="top-nav-wrapper">
-      <a
-        href="javascript:void(0)"
+      <router-link
+        to="/list"
         class="top-nav-item"
         v-for="(item, index) in navList"
         :key="index"
       >
         <img :src="item.imgSrc" alt="" />
         <span>{{ item.title }}</span>
-      </a>
+      </router-link>
     </div>
     <!-- 内容 -->
     <HomeContent></HomeContent>
@@ -19,7 +19,7 @@
 <script>
 import HomeContent from "./components/HomeContent";
 export default {
-  name:'Home',
+  name: "Home",
   data() {
     return {
       navList: [],
@@ -30,11 +30,9 @@ export default {
   },
   methods: {
     getNavList() {
-      this.axios
-        .get("api/home.json")
-        .then((res) => {
-          this.navList = res.data.nav;
-        });
+      this.axios.get("api/home.json").then((res) => {
+        this.navList = res.data.nav;
+      });
     },
   },
   components: {
@@ -44,6 +42,9 @@ export default {
 </script>
 
 <style lang="less" scope>
+.home-wrapper {
+  width: 100%;
+}
 .top-nav-wrapper {
   padding: 1rem 0 0.5rem;
   display: flex;

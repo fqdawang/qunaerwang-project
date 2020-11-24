@@ -1,11 +1,12 @@
 <template>
-  <div class="wrapper">
-    <div class="content">
+  <div class="tab-card-wrapper">
+    <div class="tab-card-content">
       <a
         href="javascript:void(0)"
         class="content-item"
         v-for="item in tabContent"
         :key="item.id"
+        @click="handle(item)"
       >
         <div class="img-w">
           <img :src="item.pic" alt="" />
@@ -28,10 +29,15 @@
 export default {
   name:'HomeCard',
   props: ["tabContent"],
+  methods: {
+    handle(item){
+      console.log(item);
+    },
+  },
 };
 </script>
 <style lang="less" scope>
-.content {
+.tab-card-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="content">
+    <div :class="[$route.path === '/home' ? 'app-content' : '']">
       <router-view></router-view>
     </div>
     <div class="tabbar-wrapper" v-if="$route.path === '/home' ? true : false">
@@ -58,9 +58,13 @@ export default {
   color: #18c0c8;
 }
 #app {
-  width: 375px;
+  // width: 375px;
+  width: 100%;
   min-width: 375px;
   font-size: 10px;
+  // padding-bottom: 50px;
+}
+.app-content {
   padding-bottom: 50px;
 }
 .tabbar-wrapper {
