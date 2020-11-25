@@ -29,8 +29,13 @@ a {
 li {
     list-style: none;
 }
+
 input {
     outline: none;
+}
+
+div {
+    display: block;
 }
 
 /* 清除浮动 */

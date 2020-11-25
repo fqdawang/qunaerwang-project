@@ -6,7 +6,7 @@
         class="content-item"
         v-for="item in tabContent"
         :key="item.id"
-        @click="handle(item)"
+        @click="handleToDetail(item)"
       >
         <div class="img-w">
           <img :src="item.pic" alt="" />
@@ -27,11 +27,12 @@
 </template>
 <script>
 export default {
-  name:'HomeCard',
+  name: "HomeCard",
   props: ["tabContent"],
   methods: {
-    handle(item){
-      console.log(item);
+    handleToDetail(goods) {
+      // 注意：如果提供了path，params会被忽略，所以要用name
+      this.$router.push({ name: "detail", params: { goods } });
     },
   },
 };
@@ -99,16 +100,16 @@ export default {
   }
 }
 .btn-w {
-    border: 1px solid #18c0c8;
-    border-radius: 3px;
-    height: 2.2rem;
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .btn-more {
-        color: #18c0c8;
-        font-size: 0.9rem;
-    }
+  border: 1px solid #18c0c8;
+  border-radius: 3px;
+  height: 2.2rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-more {
+    color: #18c0c8;
+    font-size: 0.9rem;
+  }
 }
 </style>

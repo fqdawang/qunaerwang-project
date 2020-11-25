@@ -7,6 +7,8 @@ import Customer from '../view/Customer'
 import Mine from '../view/Mine'
 import Login from '../view/Login'
 import List from '../view/List'
+import Detail from '../view/Detail'
+import Cart from '../view/Cart'
 
 import NotFound from '../components/NotFound'
 
@@ -16,19 +18,13 @@ Vue.use(VueRouter)
 const routes = [
     { path: "/", redirect: "/home" },
     { path: "/home", component: Home, name: 'home' },
-    {
-        path: "/order",
-        component: Order,
-        name: 'order',
-        meta: {
-            name: 'Mary',
-            age: 45
-        },
-    },
+    { path: "/order", component: Order, name: 'order', },
     { path: "/customer", component: Customer, name: 'customer' },
     { path: "/mine", component: Mine, name: 'mine' },
     { path: "/login", component: Login, name: 'login' },
     { path: "/list", component: List, name: 'list' },
+    { path: "/detail", component: Detail, name: 'detail' },
+    { path: "/cart", component: Cart, name: 'cart' },
     { path: "*", component: NotFound, name: 'notfound' },
 ]
 
