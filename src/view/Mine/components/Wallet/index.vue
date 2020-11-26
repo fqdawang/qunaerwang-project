@@ -28,7 +28,7 @@ export default {
   name: "Wallet",
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .wallet-wrapper {
   background-color: #fff;
   .title {

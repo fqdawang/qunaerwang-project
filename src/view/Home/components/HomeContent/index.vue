@@ -97,7 +97,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .area-item {
   padding: 0 1rem 0.5rem;
   .title-h {

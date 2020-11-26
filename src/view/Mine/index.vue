@@ -81,7 +81,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .mine-wrapper {
   height: 100vh;
   background-color: #ebeced;

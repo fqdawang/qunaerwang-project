@@ -25,7 +25,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .login-tab-wrapper {
   .title {
     background-color: #18c0c8;

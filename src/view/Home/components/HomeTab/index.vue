@@ -27,7 +27,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .title-w {
   display: flex;
   margin: 0.5rem 0;

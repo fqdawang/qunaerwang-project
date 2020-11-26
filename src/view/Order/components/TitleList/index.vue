@@ -31,7 +31,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .title-list-wrapper {
   width: 100vw;
   height: 100vh;

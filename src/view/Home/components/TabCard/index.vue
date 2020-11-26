@@ -37,7 +37,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 .tab-card-content {
   display: flex;
   flex-wrap: wrap;
