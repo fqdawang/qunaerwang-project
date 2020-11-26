@@ -9,7 +9,7 @@
       <div class="back">
         <span @click="$router.go(-1)">《</span>
       </div>
-      <div class="avatar-w">
+      <div class="avatar-w" @click="handleLogin">
         <div class="avatar">
           <img
             src="https://source.qunarzz.com/usercenter/touch/avatar.png"
@@ -73,6 +73,11 @@ export default {
   name: "Mine",
   components: {
     Wallet,
+  },
+  methods: {
+    handleLogin(){
+      this.$router.push('login')
+    }
   },
 };
 </script>

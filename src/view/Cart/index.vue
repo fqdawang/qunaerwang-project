@@ -1,5 +1,6 @@
 <template>
   <div class="cart-wrapper">
+    <div class="back" @click="$router.go(-2)">《</div>
     <div class="list-wrapper">
       <div class="item" v-for="(item, index) in cart" :key="index">
         <div class="ck-w">
@@ -73,6 +74,9 @@ export default {
   height: 100vh;
   background-color: #edeff2;
   position: relative;
+  .back {
+    padding: 1rem;
+  }
   .list-wrapper {
     .item {
       display: flex;

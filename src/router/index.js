@@ -34,8 +34,8 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
     // 模拟  是否登录  本地存储中是否有 用户名  没有的话 跳转到登录页面
-    const name = localStorage.getItem('name')
-    if (name) {
+    const userName = localStorage.getItem('userName')
+    if (userName) {
         next()
     } else {
         if (to.path === '/login') {
